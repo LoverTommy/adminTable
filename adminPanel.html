@@ -15,12 +15,12 @@
             <div class="topButtons">
                 <span class="startMatch">Начать матч</span>
                 <span class="pauseMatch">Приостановить матч</span>
-                <span class="endMatch">Завершить матч</span>
+                <span class="endMatch" id="endMatch">Завершить матч</span>
                 <span>Корт: №2</span>
                 <span>Судья: СИДОРОВ Сидор</span>
                 <span>Количество геймов: 4</span>
                 <span>Время матча: 00:12</span>
-                <div><span>Выбор подачи</span> <span>Выбор подачи</span></div>
+                <div><span class="chooseServe">Выбор подачи</span> <span class="chooseServe">Выбор подачи</span></div>
                 <span>Местное время: 15:03</span>
             </div>
 
@@ -55,8 +55,8 @@
             </div>
 
             <div class="deny">
-                <span>Отказ</span>
-                <span>Отказ</span>
+                <span class="denyButton">Отказ</span>
+                <span class="denyButton">Отказ</span>
             </div>
 
             <div class="actions">
@@ -110,6 +110,52 @@
             </div>
 
         </div>
+
+        <div class="popupWrap" id="popupWrap">
+            <div class="popup">
+                <h4>Вы уверены что хотите завершить матч?</h4>
+                <span class="popupButton">да</span>
+                <span class="popupButton">нет</span>
+            </div>
+        </div>
+
     </div>
+
+    <script>
+        const chooseServe = document.getElementsByClassName('chooseServe');
+        for(let i of chooseServe) {
+            i.addEventListener('click', (eo)=>{
+                for(let x of chooseServe) {
+                    x.style.opacity = '0.5';
+                }
+            })
+        }
+
+        const denyButtons = document.getElementsByClassName('denyButton');
+        for(let i of denyButtons) {
+            i.addEventListener('click',(eo)=>{
+                if(eo.target.classList.contains('activeDenyButton')) {
+                    eo.target.classList.remove('activeDenyButton');
+                }else {
+                    eo.target.classList.add('activeDenyButton');
+                }
+            })
+        }
+
+        const popupButtons = document.getElementsByClassName('popupButton')
+        const endMatch = document.getElementById('endMatch');
+        const popup = document.getElementById('popupWrap');
+
+        endMatch.addEventListener('click', (eo)=>{
+            popup.style.display = 'flex';
+        })
+
+        for(let i of popupButtons){
+            i.addEventListener('click',(eo)=>{
+                popup.style.display = 'none';
+            })
+        }
+
+    </script>
 </body>
 </html>
