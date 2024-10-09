@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed';
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.021);
+}
+
+.panelWrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.panelContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.topButtons {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 108px;
+    row-gap: 20px;
+}
+
+.topButtons span {
+    font-size: 16px;
+    width: 248px;
+    text-align: center;
+    color: rgba(56,56,56,1);
+    background-color: #ededed;
+    padding: 12px 0px;
+}
+
+.topButtons .startMatch {
+    background-color: #a7e0a5;
+}
+
+.topButtons .pauseMatch {
+    background-color: #e1b1af;
+}
+
+.topButtons .endMatch {
+    background-color: #fad1a9;
+}
+
+.topButtons div {
+    display: flex;
+    gap: 16px;
+}
+
+.topButtons div span {
+    width: 116px;
+}
+
+
+
+.middleButtons {
+    display: flex;
+    gap: 16px;
+}
+
+.middleButtons .playerWrap {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.middleButtons .playerWrap .player {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.middleButtons .playerWrap .player h4 {
+    font-size: 18px;
+    width: 248px;
+    padding: 26px 0px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.middleButtons .leftPlayer .player h4 {
+    background-color: #6e23c4;
+}
+
+.middleButtons .rightPlayer .player h4 {
+    background-color: black;
+}
+
+.deny {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deny span {
+    font-size: 12px;
+    text-align: center;
+    width: 248px;
+    background-color: #ededed;
+    padding: 4px 0px;
+}
+
+.middleButtons .playerWrap .stats {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.middleButtons .playerWrap .stats span {
+    font-size: 20px;
+    color: #383838;
+    padding: 9px 11px;
+    background-color: #ededed;
+    height: max-content;
+    width: max-content;
+}
+
+.middleButtons .playerWrap .stats .circle {
+    width: 18px;
+    height: 18px;
+    background-color: #d0d400;
+    border-radius: 50%;
+}
+
+.middleButtons .playerWrap .stats h3 {
+    font-size: 24px;
+    color: #383838;
+    font-weight: 400;
+    padding: 17px 10px;
+    background-color: #d8edf3;
+}
+
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.actions span {
+    width: 150px;
+    height: 65px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: 383838;
+}
+
+.actions .yellow {
+    background-color: #ffff00;
+}
+
+.actions .green {
+    background-color: #bdd387;
+}
+
+.actions .red {
+    background-color: #fcb9b8;
+}
+
+.actions .blue {
+    background-color: #83aae5;
+}
+
+.actions h4 {
+    font-size: 16px;
+    width: 248px;
+    height: 60px;
+    background-color: #aaaaaa;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0px 38px 0px 38px;
+}
+
+.actions .step {
+    width: 324px;
+}
+
+/* .actions .step2 {
+    width: 8px;
+} */
