@@ -27,6 +27,7 @@ body {
     flex-wrap: wrap;
     column-gap: 108px;
     row-gap: 20px;
+    width: 876px;
 }
 
 .topButtons span {
@@ -97,6 +98,7 @@ body {
 
 .deny {
     display: flex;
+    width: 876px;
     justify-content: space-between;
 }
 
@@ -143,6 +145,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    width: 876px;
 }
 
 .actions span {
